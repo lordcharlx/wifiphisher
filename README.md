@@ -23,10 +23,15 @@ Following are the requirements for getting the most out of Wifiphisher:
 
 Tools requires :
 aircrack-ng 
+
 create_ap
+
 apache
+
 php
+
 php-apache 
+
 xterm 
 
 Install :
