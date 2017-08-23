@@ -60,6 +60,8 @@ killall xterm
 
 pid=$( create_ap --list-running | grep $AP_INTERFACE | awk '{print $1}' )
 kill $pid
+rm dump-*
 echo "done...................!"
+
 
 fi
