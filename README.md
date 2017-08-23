@@ -1,18 +1,10 @@
-[![Build Status](https://travis-ci.org/wifiphisher/wifiphisher.svg?branch=master)](https://travis-ci.org/wifiphisher/wifiphisher)
-[![Documentation Status](https://readthedocs.org/projects/wifiphisher/badge/?version=latest)](http://wifiphisher.readthedocs.io/en/latest/?badge=latest)
-![Python Version](https://img.shields.io/badge/python-2.7-blue.svg)
-![License](https://img.shields.io/badge/license-GPL-blue.svg)
-[![Chat IRC](https://img.shields.io/badge/chat-IRC-ff69b4.svg)](https://webchat.freenode.net/?channels=%23wifiphisher)
-
-<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/wifiphisher.png" /></p>
-
 ## About
 <a href="https://wifiphisher.org">Wifiphisher</a> is a security tool that mounts automated victim-customized phishing attacks against WiFi clients in order to obtain credentials or infect the victims with malwares. It is primarily a social engineering attack that unlike other methods it does not include any brute forcing. It is an easy way for obtaining credentials from captive portals and third party login pages (e.g. in social networks) or WPA/WPA2 pre-shared keys.
 
-Wifiphisher works on Kali Linux and is licensed under the GPL license.
+Wifiphisher works on any Linux OS (I recommend Arch) and is licensed under the GPL license.
 
 ## How it works
-After achieving a man-in-the-middle position using the Evil Twin or KARMA attack, Wifiphisher redirects all HTTP requests to an attacker-controlled phishing page.
+After achieving a man-in-the-middle position using the Evil Twin , Wifiphisher redirects all HTTP requests to an attacker-controlled phishing page.
 
 From the victim's perspective, the attack makes use in three phases:
 
@@ -25,35 +17,35 @@ From the victim's perspective, the attack makes use in three phases:
 ## Requirements
 Following are the requirements for getting the most out of Wifiphisher:
 
-* Kali Linux. Although people have made Wifiphisher work on other distros, Kali Linux is the officially supported distribution, thus all new features are primarily tested on this platform.
+* Arch Linux. Although people have made Wifiphisher work on other distros, Arch Linux is the officially supported distribution, thus all new features are primarily tested on this platform.
 * One wireless network adapter that supports AP mode. Drivers should support netlink.
-* One wireless network adapter that supports Monitor mode and is capable of injection. Again, drivers should support netlink. If a second wireless network adapter is not available, you may run the tool with the --nojamming option. This will turn off the de-authentication attack though.
+* One wireless network adapter that supports Monitor mode and is capable of injection. Again, drivers should support netlink.
 
 ## Installation
 
 To install the latest development version type the following commands:
 
 ```bash
-git clone https://github.com/wifiphisher/wifiphisher.git # Download the latest revision
+git clone https://github.com/Akhil-Jalagam/wifi-phisher.git # Download the latest revision
 cd wifiphisher # Switch to tool's directory
-sudo python setup.py install # Install any dependencies (Currently, hostapd, dnsmasq, PyRIC, blessings)
+./wifi-attack.sh  # You should be root
 ```
 
-Alternatively, you can download the latest stable version from the <a href="https://github.com/wifiphisher/wifiphisher/releases">Releases page</a>.
+Alternatively, you can download the latest stable version from the <a href="https://github.com/Akhil-Jalagam/wifi-phisher/releases/">Releases page</a>.
 
 ## Usage
 
-Run the tool by typing `wifiphisher` or `python bin/wifiphisher` (from inside the tool's directory).
+Run the tool by typing `./wifi-attack` (from inside the tool's directory).
 
-By running the tool without any options, it will find the right interfaces and interactively ask the user to pick the ESSID of the target network (out of a list with all the ESSIDs in the around area) as well as a phishing scenario to perform. By default, the tool will perform both Evil Twin and KARMA attacks.
+By running the tool without any options, it will find the right interfaces and interactively ask the user to pick the ESSID of the target network (out of a list with all the ESSIDs in the around area) as well as a phishing scenario to perform. By default, the tool will perform both Evil Twin.
 
 ***
 
 ```shell
-wifiphisher -aI wlan0 -jI wlan4 -p firmware-upgrade --handshake_capture handshake.pcap
+./wifi-attack.sh  [Monitor Interface]   [Access Point Interface]
 ```
 
-Use wlan0 for spawning the rogue Access Point and wlan4 for DoS attacks. Select the target network manually from the list and perform the "Firmware Upgrade" scenario. Verify that the captured Pre-Shared Key is correct by checking it against the handshake in the handshake.pcap file.
+Use wlan0 for spawning the rogue Access Point and wlan4 for DoS attacks. Select the target network manually from the list and perform the "Firmware Upgrade" scenario.
 
 Useful for manually selecting the wireless adapters. The <a href="https://wifiphisher.org/ps/firmware-upgrade/">"Firmware Upgrade"</a> scenario is an easy way for obtaining the PSK from a password-protected network.
 
@@ -123,22 +115,8 @@ Following are all the options along with their descriptions (also available with
 <p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss6.png" /><br /><i>Fake <a href="https://wifiphisher.org/ps/oauth-login/">OAuth Login Page</a></i></p>
 <p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss4.png" /><br /><i>Fake <a href="https://wifiphisher.org/ps/wifi_connect/">web-based network manager</a></i></p>
 
-## Help needed
-If you are a Python developer or a web designer you can help us improve wifiphisher. Feel free to take a look at the <a href="https://github.com/wifiphisher/wifiphisher/issues">bug tracker</a> for some tasks to do.
-
-If you don't know how to code, you can help us by <a href="https://github.com/wifiphisher/wifiphisher/issues">proposing improvements or reporting bugs</a>. Please have a look at the <a href="https://github.com/wifiphisher/wifiphisher/wiki/Bug-reporting-guidelines">Bug Reporting Guidelines</a> and the <a href="https://github.com/wifiphisher/wifiphisher/wiki/Frequently-Asked-Questions-%28FAQ%29">FAQ document</a> beforehand.  Note that the tool does not aim to be script-kiddie friendly. Make sure you do understand how the tool works before opening an issue.
-
-## Credits
-The script is based on an idea from <a
-href="https://github.com/DanMcInerney">Dan McInerney</a>.
-
-A full list of contributors lies <a href="https://github.com/wifiphisher/wifiphisher/graphs/contributors">here</a>.
-
 ## License
 Wifiphisher is licensed under the GPL license. See [LICENSE](LICENSE) for more information.
-
-## Project Status
-Wifiphisher's current version is **1.3**. You can download the latest release from <a href="https://github.com/wifiphisher/wifiphisher/releases/tag/v1.3">here</a>. Otherwise you can get the latest development version by cloning this repository.
 
 ## Disclaimer
 * Authors do not own the logos under the `wifiphisher/data/` directory. Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research.
