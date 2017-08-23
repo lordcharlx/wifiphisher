@@ -65,11 +65,11 @@ By running the tool without any options, it will find the right interfaces and i
 
 ## Screenshots
 
-<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss5.png" /><br /><i>Targeting an access point</i></p>
-<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss2.png" /><br /><i>A successful attack</i></p>
-<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss7.png" /><br /><i>Fake <a href="https://wifiphisher.org/ps/firmware-upgrade/">router configuration page</a></i></p>
-<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss6.png" /><br /><i>Fake <a href="https://wifiphisher.org/ps/oauth-login/">OAuth Login Page</a></i></p>
-<p align="center"><img src="https://wifiphisher.github.io/wifiphisher/ss4.png" /><br /><i>Fake <a href="https://wifiphisher.org/ps/wifi_connect/">web-based network manager</a></i></p>
+<p align="center"><img src="https://github.com/Akhil-Jalagam/wifi-phisher/blob/master/screenshots/1.png" /><br /><i>Targeting an access point</i></p>
+<p align="center"><img src="https://github.com/Akhil-Jalagam/wifi-phisher/blob/master/screenshots/2.png" /><br /><i>A successful attack</i></p>
+<p align="center"><img src="https://github.com/Akhil-Jalagam/wifi-phisher/blob/master/screenshots/3.png" /><br /><i>Fake <a href="https://wifiphisher.org/ps/firmware-upgrade/">router configuration page</a></i></p>
+<p align="center"><img src="https://github.com/Akhil-Jalagam/wifi-phisher/blob/master/screenshots/4.png" /><br /><i>Fake <a href="https://wifiphisher.org/ps/oauth-login/">OAuth Login Page</a></i></p>
+<p align="center"><img src="https://github.com/Akhil-Jalagam/wifi-phisher/blob/master/screenshots/5.png" /><br /><i>Fake <a href="https://wifiphisher.org/ps/wifi_connect/">web-based network manager</a></i></p>
 
 ## License
 Wifiphisher is licensed under the GPL license. See [LICENSE](LICENSE) for more information.
