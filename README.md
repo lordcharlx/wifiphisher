@@ -21,7 +21,7 @@ Following are the requirements for getting the most out of Wifiphisher:
 * One wireless network adapter that supports AP mode. Drivers should support netlink.
 * One wireless network adapter that supports Monitor mode and is capable of injection. Again, drivers should support netlink.
 
-Tools requires :
+Tools required :
 aircrack-ng 
 
 create_ap
@@ -34,7 +34,8 @@ php-apache
 
 xterm 
 
-Install :
+Install required tools :
+
 pacman -S aircrack-ng create_ap apache php php-apache xterm
 
 ## Installation
