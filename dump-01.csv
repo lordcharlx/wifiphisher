@@ -1,11 +1,9 @@
 
 BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
-00:0F:BB:1B:FE:D8, 2017-08-23 15:03:16, 2017-08-23 15:03:27,  8,  54, OPN, ,   , -94,        3,       27, 169.254. 28.184,   4, jbit, 
-AC:C1:EE:65:7B:C7, 2017-08-23 15:03:18, 2017-08-23 15:03:32,  6,  54, WPA2, CCMP,PSK, -63,       12,        1,   0.  0.  0.  0,   4, nani, 
+EC:08:6B:F3:3C:40, 2017-08-23 21:22:04, 2017-08-23 21:22:04,  7,  54, WPA2, CCMP,PSK, -93,        1,        0,   0.  0.  0.  0,   7, Friends, 
+C4:E9:84:EC:07:98, 2017-08-23 21:22:03, 2017-08-23 21:22:07,  1,  54, WPA2 WPA, CCMP,PSK, -76,        5,        0,   0.  0.  0.  0,  13, jai telangana, 
+00:1E:A6:61:12:98, 2017-08-23 21:22:03, 2017-08-23 21:22:07,  1,  54, WPA2, CCMP,PSK, -67,        5,        0,   0.  0.  0.  0,  11, iBall-Baton, 
 
 Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
-64:CC:2E:92:2B:15, 2017-08-23 15:03:28, 2017-08-23 15:03:28, -95,        2, (not associated) ,
-3C:BB:FD:99:78:BA, 2017-08-23 15:03:24, 2017-08-23 15:03:24, -91,        2, (not associated) ,
-84:10:0D:89:40:1D, 2017-08-23 15:03:16, 2017-08-23 15:03:16, -77,        2, (not associated) ,jbit
-5C:99:60:06:69:A8, 2017-08-23 15:03:28, 2017-08-23 15:03:28, -61,        4, AC:C1:EE:65:7B:C7,
+5C:99:60:06:69:A8, 2017-08-23 21:22:07, 2017-08-23 21:22:07, -56,       12, 00:1E:A6:61:12:98,
 
