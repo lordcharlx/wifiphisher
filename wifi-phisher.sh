@@ -1,3 +1,4 @@
+#	change below interface names with yours
 INTERFACE=wlo1
 AP_INTERFACE=wlp0s20u1
 
@@ -5,10 +6,7 @@ AP_INTERFACE=wlp0s20u1
 #	stop all network managers and daemons
 #	should be root
 #	pacman -S aircrack-ng create_ap apache php php-apache xterm 
-#	copy http files for phishing to /srv/http/ or /var/www/http/
-
-#	clean dump files
-rm dump-*
+#	copy http files for phishing from my http to /srv/http/ or /var/www/http/ and customize
 
 #	start http server
 httpd -k restart
@@ -59,10 +57,9 @@ echo "Enter to clean up"
 read nothing
 killall xterm
 
+#	cleanup everything
 pid=$( create_ap --list-running | grep $AP_INTERFACE | awk '{print $1}' )
 kill $pid
 rm dump-*
 echo "done...................!"
-
-
 fi
