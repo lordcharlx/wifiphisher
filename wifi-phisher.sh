@@ -7,8 +7,9 @@ AP_INTERFACE=wlp0s20u1
 #	should be root
 #	pacman -S aircrack-ng create_ap apache php php-apache xterm 
 #	copy http files for phishing from my http to /srv/http/ or /var/www/http/ and customize (optional)
+#	configure php server and check it works or not
 
-#	start http server
+#	starting http server
 httpd -k restart
 
 #	awk fields for text processing
@@ -21,6 +22,7 @@ ip link set dev $INTERFACE up
 ip link set dev $AP_INTERFACE up
 iwconfig $INTERFACE mode monitor
 
+# 	press ctrl^c after it scans all APs
 xterm -e "airodump-ng -w dump --output-format csv $INTERFACE"
 
 clear
