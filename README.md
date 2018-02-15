@@ -65,15 +65,15 @@ By running the tool without any options, it will find the right interfaces and i
 
 ## Screenshots
 ![alt text](https://raw.githubusercontent.com/akhiljalagam/wifi-phisher/master/screenshots/1.png)
-<p align="center"><br /><i>Targeting an access point</i></p>
+<p align="center"><i>Targeting an access point</i></p>
 ![alt text](https://raw.githubusercontent.com/akhiljalagam/wifi-phisher/master/screenshots/2.png)
-<p align="center"><br /><i>A successful attack</i></p>
+<p align="center"><i>A successful attack</i></p>
 ![alt text](https://raw.githubusercontent.com/akhiljalagam/wifi-phisher/master/screenshots/3.png)
-<p align="center"><br /><i>Fake <a href="https://wifiphisher.org/ps/firmware-upgrade/">router configuration page</a></i></p>
+<p align="center"><i>Fake <a href="https://wifiphisher.org/ps/firmware-upgrade/">router configuration page</a></i></p>
 ![alt text](https://raw.githubusercontent.com/akhiljalagam/wifi-phisher/master/screenshots/4.png)
-<p align="center"><br /><i>Fake <a href="https://wifiphisher.org/ps/oauth-login/">OAuth Login Page</a></i></p>
+<p align="center"><i>Fake <a href="https://wifiphisher.org/ps/oauth-login/">OAuth Login Page</a></i></p>
 ![alt text](https://raw.githubusercontent.com/akhiljalagam/wifi-phisher/master/screenshots/5.png)
-<p align="center"><br /><i>Fake <a href="https://wifiphisher.org/ps/wifi_connect/">web-based network manager</a></i></p>
+<p align="center"><i>Fake <a href="https://wifiphisher.org/ps/wifi_connect/">web-based network manager</a></i></p>
 
 ## License
 Wifiphisher is licensed under the GPL license. See [LICENSE](LICENSE) for more information.
