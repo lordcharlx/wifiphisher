@@ -65,7 +65,7 @@ By running the tool without any options, it will find the right interfaces and i
 
 ## Screenshots
 ![alt text](https://raw.githubusercontent.com/akhiljalagam/wifi-phisher/master/screenshots/1.png)
-<p align="center"><i>Targeting an access point</i></p>
+Targeting an access point
 ![alt text](https://raw.githubusercontent.com/akhiljalagam/wifi-phisher/master/screenshots/2.png)
 <p align="center"><i>A successful attack</i></p>
 ![alt text](https://raw.githubusercontent.com/akhiljalagam/wifi-phisher/master/screenshots/3.png)
