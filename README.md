@@ -64,7 +64,7 @@ By running the tool without any options, it will find the right interfaces and i
 
 
 ## Screenshots
-
+![alt text](https://raw.githubusercontent.com/akhiljalagam/wifi-phisher/master/screenshots/1.png)
 <p align="center"><img src="https://github.com/Akhil-Jalagam/wifi-phisher/blob/master/screenshots/1.png" /><br /><i>Targeting an access point</i></p>
 <p align="center"><img src="https://github.com/Akhil-Jalagam/wifi-phisher/blob/master/screenshots/2.png" /><br /><i>A successful attack</i></p>
 <p align="center"><img src="https://github.com/Akhil-Jalagam/wifi-phisher/blob/master/screenshots/3.png" /><br /><i>Fake <a href="https://wifiphisher.org/ps/firmware-upgrade/">router configuration page</a></i></p>
