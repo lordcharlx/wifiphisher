@@ -1,11 +1,33 @@
-#	change below interface names with yours
-INTERFACE=wlo1
+
+DEAUTH_INTERFACE=wlo1
 AP_INTERFACE=wlp0s20u1
 
-#	check dependencies
-#	stop all network managers and daemons
-#	should be root
-#	pacman -S aircrack-ng create_ap apache php php-apache xterm 
+checkdependencies()
+{
+	dpendencies=(ip arping cut ping mysql arping id hostnamectl)
+	for (( i = 0; i < ${#dpendencies[@]}; i++ )); do
+		which ${dpendencies[$i]} >> /dev/null
+		if [[ $? != 0 ]]; then
+			echo "command ${dpendencies[$i]} : missing "
+			exit
+		fi
+	done
+}
+
+stop_network_manager() {
+	systemctl stop NetworkManager.service
+}
+
+check_root()
+{
+	if [[ `id -u` != 0 ]]; then
+		echo "ERROR  : you should be root to use this tool"
+		echo "ADVICE : enter su command to enter into root shell"
+		exit
+	fi
+}
+
+#	pacman -S aircrack-ng create_ap apache php php-apache xterm
 #	copy http files for phishing from my http to /srv/http/ or /var/www/http/ and customize (optional)
 #	configure php server and check it works or not
 
