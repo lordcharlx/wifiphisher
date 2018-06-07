@@ -4,7 +4,7 @@ AP_INTERFACE=wlp0s20u1
 
 checkdependencies()
 {
-	dpendencies=(ip arping cut ping mysql arping id hostnamectl)
+	dpendencies=(ip arping cut ping mysql arping id hostnamectl httpd)
 	for (( i = 0; i < ${#dpendencies[@]}; i++ )); do
 		which ${dpendencies[$i]} >> /dev/null
 		if [[ $? != 0 ]]; then
