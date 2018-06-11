@@ -1,6 +1,8 @@
+# arch linux core os
+# wifiphisher-I1 -I2
 
-DEAUTH_INTERFACE=wlo1
-AP_INTERFACE=wlp0s20u1
+DEAUTH_INTERFACE=$1
+AP_INTERFACE=$2
 
 checkdependencies()
 {
