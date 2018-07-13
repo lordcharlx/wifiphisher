@@ -49,15 +49,6 @@ cd wifiphisher # Switch to tool's directory
 ```shell
 ./wifi-phisher.sh  [Monitor Interface]   [Access Point Interface]
 ```
-
-
-# Screenshots
-![alt text](https://raw.githubusercontent.com/akhiljalagam/wifi-phisher/master/screenshots/1.png)
-![alt text](https://raw.githubusercontent.com/akhiljalagam/wifi-phisher/master/screenshots/2.png)
-![alt text](https://raw.githubusercontent.com/akhiljalagam/wifi-phisher/master/screenshots/3.png)
-![alt text](https://raw.githubusercontent.com/akhiljalagam/wifi-phisher/master/screenshots/4.png)
-![alt text](https://raw.githubusercontent.com/akhiljalagam/wifi-phisher/master/screenshots/5.png)
-
 # Disclaimer
 
 * Usage of Wifiphisher for attacking infrastructures without prior mutual consistency can be considered as an illegal activity. It is the final user's responsibility to obey all applicable local, state and federal laws. Authors assume no liability and are not responsible for any misuse or damage caused by this program.
